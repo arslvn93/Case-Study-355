@@ -5,179 +5,134 @@
 // To change text, images, or other content, edit the values in this file.
 // =_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_
 const config = {
-  // -----------------------------------------------------------------------------------------------
-  // GLOBALS
-  // These are values that can be reused throughout the page.
-  // Use the `{{variableName}}` syntax in any string to automatically insert a value from here.
-  // For example, `{{companyName}}` will be replaced with "iStreet Realty Group".
-  // -----------------------------------------------------------------------------------------------
-  globals: {
-    // The main name of the company or brand. Used in the header, footer, and other text.
-    companyName: "iStreet Realty Group",
-
-    // The default text for all major Call-to-Action (CTA) buttons.
-    mainCTAButtonText: "Book A Discovery Call",
-    // The destination URL for all major Call-to-Action (CTA) buttons.
-    mainCTAButtonURL: "https://calendly.com/your-salesgenius-link",
-
-    // The primary theme color for the page (e.g., for tags, links, highlights).
-    // This value is applied to the `--gold` CSS variable.
-    primaryColor: "#e3c379",
-
-    // The accent theme color, typically used for button backgrounds.
-    // This value is applied to the `--accent` CSS variable.
-    accentColor: "#d9c6a2",
-
-    // Facebook Pixel ID for tracking. Leave empty to disable Facebook tracking.
-    facebookPixelId: "1074316633770404",
-
-    // A list of agent objects. This data is used to build the contact cards in the sidebar and footer.
-    // You can add or remove agents from this list.
-    agents: [
+  "globals": {
+    "companyName": "Amy Caughlin",
+    "mainCTAButtonText": "Book A Discovery Call",
+    "mainCTAButtonURL": "#contact",
+    "primaryColor": "#e3c379",
+    "accentColor": "#d9c6a2",
+    "agents": [
       {
-        // Full name of the agent.
-        name: "Rick Roccasalva",
-        // (Optional) URL for the agent's photo. If omitted, no photo will be shown for this agent.
-        imageSrc: "https://images.unsplash.com/photo-1557862921-37829c790f19?fit=crop&w=100&q=80",
-        // A list of contact methods for the agent.
-        contactDetails: [
-          { type: "email", value: "rick@istreelrealty.ca" },
-          { type: "phone", value: "(416) 616-9369" }
-        ]
-      },
-      {
-        name: "Steven Simonetti",
-        imageSrc: "https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&w=100&q=80",
-        contactDetails: [
-          { type: "email", value: "steven@istreelrealty.ca" },
-          { type: "phone", value: "(416) 400-7653" }
+        "name": "Amy Caughlin",
+        "imageSrc": "https://prod-files-secure.s3.us-west-2.amazonaws.com/8e0c10a0-da43-409c-b191-91135b7161ff/d43b40bf-8ed2-49c3-a704-34908837cf96/SueMoodiePhotography_CalgaryBrandPhotography_AmyCaughlin_StudioSession_60_Edit.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666LKHNXXL%2F20251014%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251014T171007Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIGmQ4ExBupGDeQyPG8scu2EcLKS9GrugnougPJ%2B9pjSpAiEA%2FkPn7c3HTu5ObHtD8ZzPaDjGoyK8iqACLkZyMm0%2BQgYq%2FwMIYRAAGgw2Mzc0MjMxODM4MDUiDG4BXzBsJCmpHWvoSSrcA02172RjOQlwEs95kVgW%2FZE4lZ1ENHQcX5An%2F35Sfq%2BQ8pUuwRI%2FDBK4juiNqO%2BT%2Btcf52CbjOr%2BmYFmETBJPBVVxUfh2mgT0E6DIN46fefTiU0XVhat%2FqpY15L3ypxI0khc2fQZACjRBVT1U7QAh%2FsBcY7jYnVebJLduFZXlwrL9HFSLVnI8Y4yi79UaH6OSmk7Hc102gVvQIRosfvQAHIIV0LyN8TxfuSrt9JEgyvNuvTlawitIvTymLPcJuIYZ7nF8OvkCiO5DS2EB%2Bj%2BljPCZq%2Fb15A3vnZ1VvzqATtNmMDEyBvOhxJbqcqYwIs7ZTsqiQsqgHTyPfShUK5zCVmipbSLAhVNro1lbY8b8leSjSIcfcGzfhvAvfg6VqpsuHna12TiBhANwTlLhORKXgpWHLqeo%2BrKRExj1I5bz3SUZjHrkbxx7d6eYfWG%2F7XNs%2BgOcjzcyjqOn%2FToWLZNiJByr2ELuBibsAtZb1RJ01KfL6OM5LVtsbhptjR4DiVeRqTDmql7NxO3tW0OQ1zXI0xZB0ee6Up3aaOnYlADrE0yhWAwBq1QDcXSjQAEJpfTZseAEz9ZbWGgsw%2FQfcUNSCqO5HqUUQpBNhHyUVfMvxKSgF1ieyUom5HYY%2FqnMN7tuccGOqUBNL%2FmHTZ%2BAHE7DHUyhGg2ze1pbsN2DGlAKHqDock81rEejeSWSB3p7z%2FIYc4%2BCj0FLLa3xjoM7zEbcBhOE1%2BNs0%2F9HU4ZbjoV3XLR0HQTNCdSreT2Nc8%2BEDwJWIPsMlw1XlLuu9HU6XASPDdc%2F1TwLudor1vOFd6yErS5jsQxT0KkYC4%2FwkGmTVtTxCGF365fCGPFBY%2FNQg4LBYl4vv0%2FNBPKekdy&X-Amz-Signature=ad0d4fa665878ad6b4f9c5119d3c35ae9fe6b658622ac90e9ad7b5f757510707&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "contactDetails": [
+          {
+            "type": "email",
+            "value": "amy@caughlinrealestate.ca"
+          },
+          {
+            "type": "phone",
+            "value": "15874391618"
+          }
         ]
       }
     ]
   },
-
-  // -----------------------------------------------------------------------------------------------
-  // HEADER
-  // Content for the main header section at the top of the page.
-  // -----------------------------------------------------------------------------------------------
-  header: {
-    // A small tag or label that appears above the main title.
-    tag: "CASE STUDY",
-    // The main headline (H1) of the page.
-    title: "How We Helped an Investor Win a 10-Offer Bidding War and Secure a Cash-Flowing Duplex in Vaughan",
-    // The subheadline below the main title. Can include HTML tags like <strong> or <a>.
-    subheadline: "Purchased in a <strong>High-Demand Area</strong> With Strong Terms—Now Generating Top-Dollar Rent in a Tight Market"
+  "header": {
+    "tag": "CASE STUDY",
+    "title": "How We Helped East Coast Buyers Find Their Perfect Red Deer Home in Just 3 Days Without Missing Their Flight Home",
+    "subheadline": "Purchased in a <strong>High-Demand Area</strong> With Strong Terms—Now <a href=\"#\">Generating Top-Dollar Rent</a> in a Tight Market"
   },
-
-  // -----------------------------------------------------------------------------------------------
-  // MAIN BOX
-  // This object contains the content for the two-column layout below the header,
-  // which includes the main summary and the sidebar.
-  // -----------------------------------------------------------------------------------------------
-  mainBox: {
-    // Content for the left column (the main summary).
-    summary: {
-      title: "How We Helped an Investor Win a 10-Offer Bidding War and Secure a Cash-Flowing Duplex in Vaughan",
-      heroImage: { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80" },
-      subTitle: "Summary",
-      // An array of paragraph strings. Each string is a new paragraph. Can include HTML.
-      paragraphs: [
-        "In one of Vaughan’s most competitive pockets, a <strong>savvy investor client was looking for a cash-flowing, turn-key property to build long-term generational wealth</strong>. The challenge: high demand, limited inventory, and bidding wars on nearly every listing worth seeing.",
-        "After viewing 8 homes, we found a <strong>rare 2-unit property in Woodbridge</strong> underlisted at $999k to spark competition. The listing drew 10 offers—but through strategic negotiation, a larger deposit, firm terms, and a quick close... we won the deal at $1.26M without needing to be the highest bid. The property has since been <strong>rented at top market value</strong>, exceeding the client’s expectations and <strong>setting the foundation for strong equity gains</strong> in the years to come."
+  "mainBox": {
+    "summary": {
+      "title": "How We Helped East Coast Buyers Find Their Perfect Red Deer Home in Just 3 Days Without Missing Their Flight Home",
+      "heroImage": {
+        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80"
+      },
+      "subTitle": "Summary",
+      "paragraphs": [
+        "When life-changing opportunities arise, sometimes you have to move fast. This East Coast couple had just sold their family home and needed to secure their new Alberta house before flying back east – all while staying close to their budget and finding a home that truly fit their needs.",
+        "Through professional service and market expertise, we delivered exceptional results for our client. Secured their dream home at 52 Kirby Street for $480,400 – saving them $4,500 off the asking price <strong>FOUND, NEGOTIATED AND FIRMED UP THEIR PURCHASE IN JUST 3 DAYS</strong> <strong>ACHIEVED 30-DAY CLOSING</strong> perfectly timed with their cross-country move Successfully navigated the purchase with minimal conditions, making their offer highly competitive despite not being in a multiple offer situation"
       ]
     },
-    // Content for the right column (the sidebar).
-    sidebar: {
-      title: "About {{companyName}}",
-      image: { src: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?fit=crop&w=200&q=80" },
-      // An array of paragraph strings for the sidebar. Can include HTML like <br> for line breaks.
-      paragraphs: [
-        "At {{companyName}} we are built on integrity, insight, and innovation.",
-        "We combine decades of real estate expertise with cutting-edge technology to deliver unmatched support, transparency, and results for our clients.",
-        "With over 40 years of hands-on real estate experience and extensive corporate backgrounds, our managing partners provide a balanced and strategic approach to Residential, Commercial, and Investment properties.",
-        "We prioritize clear communication and use the latest market insights to guide every client toward success—whether buying, selling, or investing.",
-        "<strong>At iStreet Realty Inc., we're more than real estate experts—we're your trusted partner in building your future.</strong>"
+    "sidebar": {
+      "title": "About {{companyName}}",
+      "image": {
+        "src": "https://prod-files-secure.s3.us-west-2.amazonaws.com/8e0c10a0-da43-409c-b191-91135b7161ff/d43b40bf-8ed2-49c3-a704-34908837cf96/SueMoodiePhotography_CalgaryBrandPhotography_AmyCaughlin_StudioSession_60_Edit.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666LKHNXXL%2F20251014%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251014T171007Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIGmQ4ExBupGDeQyPG8scu2EcLKS9GrugnougPJ%2B9pjSpAiEA%2FkPn7c3HTu5ObHtD8ZzPaDjGoyK8iqACLkZyMm0%2BQgYq%2FwMIYRAAGgw2Mzc0MjMxODM4MDUiDG4BXzBsJCmpHWvoSSrcA02172RjOQlwEs95kVgW%2FZE4lZ1ENHQcX5An%2F35Sfq%2BQ8pUuwRI%2FDBK4juiNqO%2BT%2Btcf52CbjOr%2BmYFmETBJPBVVxUfh2mgT0E6DIN46fefTiU0XVhat%2FqpY15L3ypxI0khc2fQZACjRBVT1U7QAh%2FsBcY7jYnVebJLduFZXlwrL9HFSLVnI8Y4yi79UaH6OSmk7Hc102gVvQIRosfvQAHIIV0LyN8TxfuSrt9JEgyvNuvTlawitIvTymLPcJuIYZ7nF8OvkCiO5DS2EB%2Bj%2BljPCZq%2Fb15A3vnZ1VvzqATtNmMDEyBvOhxJbqcqYwIs7ZTsqiQsqgHTyPfShUK5zCVmipbSLAhVNro1lbY8b8leSjSIcfcGzfhvAvfg6VqpsuHna12TiBhANwTlLhORKXgpWHLqeo%2BrKRExj1I5bz3SUZjHrkbxx7d6eYfWG%2F7XNs%2BgOcjzcyjqOn%2FToWLZNiJByr2ELuBibsAtZb1RJ01KfL6OM5LVtsbhptjR4DiVeRqTDmql7NxO3tW0OQ1zXI0xZB0ee6Up3aaOnYlADrE0yhWAwBq1QDcXSjQAEJpfTZseAEz9ZbWGgsw%2FQfcUNSCqO5HqUUQpBNhHyUVfMvxKSgF1ieyUom5HYY%2FqnMN7tuccGOqUBNL%2FmHTZ%2BAHE7DHUyhGg2ze1pbsN2DGlAKHqDock81rEejeSWSB3p7z%2FIYc4%2BCj0FLLa3xjoM7zEbcBhOE1%2BNs0%2F9HU4ZbjoV3XLR0HQTNCdSreT2Nc8%2BEDwJWIPsMlw1XlLuu9HU6XASPDdc%2F1TwLudor1vOFd6yErS5jsQxT0KkYC4%2FwkGmTVtTxCGF365fCGPFBY%2FNQg4LBYl4vv0%2FNBPKekdy&X-Amz-Signature=ad0d4fa665878ad6b4f9c5119d3c35ae9fe6b658622ac90e9ad7b5f757510707&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"
+      },
+      "paragraphs": [
+        "A former risk manager turned Realtor, proptech co-founder, podcast host, and passionate community advocate. I help busy professionals and families find homes that truly fit their lives, while working behind the scenes to make real estate better for everyone involved. With a background in risk management, I bring a strategic lens to every transaction, ensuring my clients make informed, confident decisions. I’m also the co-founder of Jazzberry, a platform designed by realtors, for realtors, built to simplify the chaos behind the curtain so clients experience more clarity, transparency, and joy in their home journey. A proud Maritimer, I lead with authenticity, hospitality, and heart. Whether I’m running along the Bow River, adventuring in the mountains with my family, or hosting FutureRE — The Future of Real Estate, I’m always driven by curiosity, connection, and impact. My path hasn’t been linear — and I believe that’s where the magic lies. I’m here to challenge the status quo, build solutions that truly help people, and give back to the communities that raised me — especially organizations that uplift women, children, and families."
       ]
     }
   },
-
-  // -----------------------------------------------------------------------------------------------
-  // SECTIONS
-  // An array of content sections that appear in order below the main box.
-  // You can add, remove, or reorder these section objects.
-  // -----------------------------------------------------------------------------------------------
-  sections: [
-    // `type: "standard"`: A flexible section that can contain a title, paragraphs, a list,
-    // a testimonial, and an image. All properties are optional.
-    // If an `image` is included, the section will render as two columns (text and image).
-    // If no `image` is included, it will be a single, full-width column.
+  "sections": [
     {
-      type: "standard",
-      title: "The Challenge",
-      paragraphs: [
-        "This investor client had a clear goal: <strong>find a cash-flowing, turn-key duplex in one of Vaughan’s most desirable neighborhoods—Woodbridge.</strong> Out in a market filled with bidding wars and underlisted homes designed to spark competition, finding the right property and <strong>winning it without overpaying was no small feat.</strong>",
-        "The biggest challenge? <strong>Every worthwhile home had multiple offers</strong>, and this buyer was competing with aggressive bids from both investors and end-users. There was also <strong>lingering uncertainty around whether a property like this could attract renters at top value</strong>, which could make or break the deal financially."
+      "type": "standard",
+      "title": "The Challenge",
+      "paragraphs": [
+        "They had an extremely tight timeline – just 3 days in Alberta to find, negotiate, and firm up their purchase before their return flight",
+        "The pressure of potentially going home empty-handed after selling their East Coast property was overwhelming",
+        "They needed quick possession to coordinate their cross-country move seamlessly",
+        "Finding a home that checked all their boxes (location, double garage, within budget) in such a short window felt nearly impossible"
       ]
     },
     {
-      type: "standard",
-      title: "The Strategy",
-      paragraphs: [
-        "With 8 properties viewed and a clear sense of what would work, the client was ready to move fast. <strong>When 95 Mondavi Rd hit the market—underlisted at $999,000 to fuel a bidding war—we saw an opportunity.</strong>",
-        "Rick’s negotiation strategy focused on strong offer terms, not just price. By removing financing conditions, offering a larger deposit, and proposing a quicker close, he positioned the client as a serious, low-risk buyer. Rick also maintained clear and professional communication with the listing agent throughout, building trust and credibility."
+      "type": "standard",
+      "title": "The Strategy",
+      "paragraphs": [
+        "Pre-qualified them thoroughly and lined up 15 carefully selected properties that matched their exact criteria before they even landed in Alberta",
+        "Scheduled an intensive 3-day viewing marathon, maximizing every hour they had in Red Deer",
+        "Streamlined the offer process with minimal conditions and an aggressive timeline that sellers would find irresistible",
+        "Leveraged my deep local market knowledge to identify the best value properties that hadn't been sitting on the market too long",
+        "Coordinated with their East Coast agent to ensure seamless communication and documentation across provinces"
       ],
-      // An optional testimonial object. Renders as a styled blockquote.
-      testimonial: { quote: "“I had an amazing experience working with Rick & Steven at iStreet Realty Group. Communication and follow-through were prompt every step. Negotiating the winning offer was about strategy, not just price!”<br><span>— Vaughan Investor</span>" }
+      "testimonial": {
+        "quote": "\"Working with Amy was exactly what we needed during such a stressful time. She understood that we weren't just buying a house – we were making a life-changing move to be closer to our son. Her preparation, local expertise, and ability to move quickly gave us confidence that we'd find the right home, even with our impossible timeline. We couldn't have done this without her guidance and trusted referral network.\"<br><span>— Satisfied Client</span>"
+      }
     },
     {
-      type: "standard",
-      title: "The Solution",
-      paragraphs: [
-        "<strong>The winning offer came in at $1,260,000</strong>—not the highest bid on the table, but the most attractive in terms of certainty, speed, and simplicity. The absence of conditions and the strength of the deposit made the difference, and the seller accepted.",
-        "<strong>After closing, the client successfully rented out both units</strong> of the property at top market value—proving the property’s income potential. The fast, clean closing allowed the client to move quickly and capitalize on a prime investment opportunity."
+      "type": "standard",
+      "title": "The Solution",
+      "paragraphs": [
+        "Everything changed when their trusted East Coast agent referred them to me with a glowing recommendation. They knew they needed someone who understood the unique challenges of long-distance relocating and could move at lightning speed when the right opportunity presented itself."
       ],
-      // An optional image object. If present, creates a two-column layout for this section.
-      image: { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80" }
+      "image": {
+        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80"
+      }
     },
     {
-      type: "standard",
-      title: "The Results",
-      // An optional array of strings for a bulleted list.
-      listItems: [
-        "The client won a competitive 10-offer bidding war and secured a turn-key duplex in Woodbridge that now generates strong rental income.",
-        "Both units were rented out at top market value shortly after closing, confirming the investment’s potential.",
-        "<strong>By acting quickly and strategically, the client not only acquired a high-performing property in a competitive market, but also set themselves up for significant equity growth over the next 3–5 years.</strong>"
+      "type": "standard",
+      "title": "The Results",
+      "paragraphs": [
+        "Secured their dream home at 52 Kirby Street for $480,400 – saving them $4,500 off the asking price",
+        "<strong>FOUND, NEGOTIATED AND FIRMED UP THEIR PURCHASE IN JUST 3 DAYS</strong>",
+        "<strong>ACHIEVED 30-DAY CLOSING</strong> perfectly timed with their cross-country move",
+        "Successfully navigated the purchase with minimal conditions, making their offer highly competitive despite not being in a multiple offer situation"
       ]
     },
     {
-      type: "standard",
-      title: "Conclusion",
-      paragraphs: [ "<strong>In a competitive market, success doesn’t always come down to price.</strong> With the right agent, strategy, and negotiation, even a 10-offer bidding war can be an opportunity—not a roadblock." ]
+      "type": "standard",
+      "title": "Conclusion",
+      "paragraphs": [
+        "Know your top 3 non-negotiables before you start looking – this clarity becomes crucial when time is limited and decisions need to be made quickly",
+        "A well-connected agent with a strong referral network can be your secret weapon, especially for long-distance moves",
+        "Sometimes the best deals come from moving fast on properties that haven't been over-marketed – fresh listings often mean motivated sellers"
+      ]
     },
-    // `type: "ctaBanner"`: Renders a distinct, full-width Call-to-Action banner with a dark background.
     {
-      type: "ctaBanner",
-      ctaBannerContent: {
-        subhead: "Trusted By Hundreds Of Home Buyers & Sellers",
-        headline: "Find Out More About Working With<br>Rick Roccasalva and Steven<br>Simonetti at {{companyName}}",
-        smallText: "Book A Discovery Call Now ➡️"
+      "type": "ctaBanner",
+      "ctaBannerContent": {
+        "subhead": "Trusted By Hundreds Of Home Buyers & Sellers",
+        "headline": "Ready to make your Alberta move happen without the stress? Book your complimentary relocation strategy session where we'll create your personalized home-finding timeline and connect you with our trusted agent network across Canada.",
+        "smallText": "Book A Discovery Call Now ➡️"
       }
     }
   ],
-
-  // -----------------------------------------------------------------------------------------------
-  // FOOTER
-  // Content for the footer at the bottom of the page.
-  // -----------------------------------------------------------------------------------------------
-  footer: {
-    logo: { src: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?fit=crop&w=200&q=80" },
-    brokerageLabel: "Brokerage:",
-    brokerageName: "Homelife Partners Realty Corp.",
-    brokerageAddress: "123 Main Street, Suite 456, Toronto, ON M1M 1M1",
-    // A secondary logo, often for the brokerage. Optional.
-    secondaryLogo: { src: "https://i.imgur.com/9GIzqTo.png" },
-    disclaimerText: "All testimonials on this page are from real clients. Their experiences do not guarantee similar results.<br>Individual results may vary based on location, market conditions, motivation, as well as other unforeseen factors. Your results may vary.",
-    privacyPolicy: { text: "Privacy Policy", href: "#" }
+  "footer": {
+    "logo": {
+      "src": "https://prod-files-secure.s3.us-west-2.amazonaws.com/8e0c10a0-da43-409c-b191-91135b7161ff/d43b40bf-8ed2-49c3-a704-34908837cf96/SueMoodiePhotography_CalgaryBrandPhotography_AmyCaughlin_StudioSession_60_Edit.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666LKHNXXL%2F20251014%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251014T171007Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIGmQ4ExBupGDeQyPG8scu2EcLKS9GrugnougPJ%2B9pjSpAiEA%2FkPn7c3HTu5ObHtD8ZzPaDjGoyK8iqACLkZyMm0%2BQgYq%2FwMIYRAAGgw2Mzc0MjMxODM4MDUiDG4BXzBsJCmpHWvoSSrcA02172RjOQlwEs95kVgW%2FZE4lZ1ENHQcX5An%2F35Sfq%2BQ8pUuwRI%2FDBK4juiNqO%2BT%2Btcf52CbjOr%2BmYFmETBJPBVVxUfh2mgT0E6DIN46fefTiU0XVhat%2FqpY15L3ypxI0khc2fQZACjRBVT1U7QAh%2FsBcY7jYnVebJLduFZXlwrL9HFSLVnI8Y4yi79UaH6OSmk7Hc102gVvQIRosfvQAHIIV0LyN8TxfuSrt9JEgyvNuvTlawitIvTymLPcJuIYZ7nF8OvkCiO5DS2EB%2Bj%2BljPCZq%2Fb15A3vnZ1VvzqATtNmMDEyBvOhxJbqcqYwIs7ZTsqiQsqgHTyPfShUK5zCVmipbSLAhVNro1lbY8b8leSjSIcfcGzfhvAvfg6VqpsuHna12TiBhANwTlLhORKXgpWHLqeo%2BrKRExj1I5bz3SUZjHrkbxx7d6eYfWG%2F7XNs%2BgOcjzcyjqOn%2FToWLZNiJByr2ELuBibsAtZb1RJ01KfL6OM5LVtsbhptjR4DiVeRqTDmql7NxO3tW0OQ1zXI0xZB0ee6Up3aaOnYlADrE0yhWAwBq1QDcXSjQAEJpfTZseAEz9ZbWGgsw%2FQfcUNSCqO5HqUUQpBNhHyUVfMvxKSgF1ieyUom5HYY%2FqnMN7tuccGOqUBNL%2FmHTZ%2BAHE7DHUyhGg2ze1pbsN2DGlAKHqDock81rEejeSWSB3p7z%2FIYc4%2BCj0FLLa3xjoM7zEbcBhOE1%2BNs0%2F9HU4ZbjoV3XLR0HQTNCdSreT2Nc8%2BEDwJWIPsMlw1XlLuu9HU6XASPDdc%2F1TwLudor1vOFd6yErS5jsQxT0KkYC4%2FwkGmTVtTxCGF365fCGPFBY%2FNQg4LBYl4vv0%2FNBPKekdy&X-Amz-Signature=ad0d4fa665878ad6b4f9c5119d3c35ae9fe6b658622ac90e9ad7b5f757510707&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"
+    },
+    "brokerageLabel": "Brokerage:",
+    "brokerageName": "Greater Property Group",
+    "brokerageAddress": "5940 Macleod Trl SW #500, Calgary, AB T2H 2G4",
+    "secondaryLogo": {
+      "src": "https://i.imgur.com/9GIzqTo.png"
+    },
+    "disclaimerText": "All testimonials on this page are from real clients. Their experiences do not guarantee similar results.<br>Individual results may vary based on location, market conditions, motivation, as well as other unforeseen factors. Your results may vary.",
+    "privacyPolicy": {
+      "text": "Privacy Policy",
+      "href": "https://www.welpneedthis.com"
+    }
   }
 };
 
