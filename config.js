@@ -84,7 +84,7 @@ const config = {
         "Everything changed when their trusted East Coast agent referred them to me with a glowing recommendation. They knew they needed someone who understood the unique challenges of long-distance relocating and could move at lightning speed when the right opportunity presented itself."
       ],
       "image": {
-        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80"
+        "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Screenshot2025-10-30at12.26.02.png"
       },
       "listItems": []
     },
