@@ -32,7 +32,7 @@ const config = {
     "summary": {
       "title": "How We Helped East Coast Buyers Find Their Perfect Red Deer Home in Just 3 Days Without Missing Their Flight Home",
       "heroImage": {
-        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80"
+        "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Screenshot2025-10-30at12.26.11.png"
       },
       "subTitle": "Summary",
       "paragraphs": [
