@@ -26,7 +26,7 @@ const config = {
   "header": {
     "tag": "CASE STUDY",
     "title": "How We Helped East Coast Buyers Find Their Perfect Red Deer Home in Just 3 Days Without Missing Their Flight Home",
-    "subheadline": "Purchased in a <strong>High-Demand Area</strong> With Strong Terms—Now <a href=\"#\">Generating Top-Dollar Rent</a> in a Tight Market"
+    "subheadline": "High stakes. Zero time. One perfect match — all wrapped up before takeoff."
   },
   "mainBox": {
     "summary": {
