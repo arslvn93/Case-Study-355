@@ -124,7 +124,7 @@ const config = {
       "href": "https://greaterpropertygroup.com/privacy-policy/"
     },
     "logo": {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXGi6Rvo690px2pZc5DMbSWA8c43PHrbQV1AQhakkY8sVONq4iEAkAkfNjhy8G_hHcX5I&usqp=CAU"
+      "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Screenshot2025-10-30at12.18.10.png"
     },
     "secondaryLogo": {
       "src": "https://greaterpropertygroup.com/wp-content/uploads/2022/06/255x71px_Logo-e1656046332885.png"
