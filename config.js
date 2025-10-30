@@ -37,7 +37,7 @@ const config = {
       "subTitle": "Summary",
       "paragraphs": [
         "When life-changing opportunities arise, sometimes you have to move fast. This East Coast couple had just sold their family home and needed to secure their new Alberta house before flying back east – all while staying close to their budget and finding a home that truly fit their needs.",
-        "Through professional service and market expertise, we delivered exceptional results for our client. Secured their dream home at 52 Kirby Street for $480,400 – saving them $4,500 off the asking price <strong>FOUND, NEGOTIATED AND FIRMED UP THEIR PURCHASE IN JUST 3 DAYS</strong> <strong>ACHIEVED 30-DAY CLOSING</strong> perfectly timed with their cross-country move Successfully navigated the purchase with minimal conditions, making their offer highly competitive despite not being in a multiple offer situation"
+        "Through professional service and market expertise, we delivered exceptional results for our client. Secured their dream home at 52 Kirby Street for $480,400 – saving them $4,500 off the asking price. <strong>FOUND, NEGOTIATED AND FIRMED UP THEIR PURCHASE IN JUST 3 DAYS.</strong> <strong>ACHIEVED 30-DAY CLOSING.</strong> Perfectly timed with their cross-country move. Successfully navigated the purchase with minimal conditions, making their offer highly competitive despite not being in a multiple offer situation."
       ]
     },
     "sidebar": {
