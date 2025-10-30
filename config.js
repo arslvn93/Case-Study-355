@@ -121,7 +121,7 @@ const config = {
   "footer": {
     "privacyPolicy": {
       "text": "Privacy Policy",
-      "href": "https://www.welpneedthis.com"
+      "href": "https://greaterpropertygroup.com/privacy-policy/"
     },
     "logo": {
       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXGi6Rvo690px2pZc5DMbSWA8c43PHrbQV1AQhakkY8sVONq4iEAkAkfNjhy8G_hHcX5I&usqp=CAU"
