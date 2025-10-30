@@ -18,7 +18,7 @@ const config = {
     ],
     "companyName": "Amy Caughlin",
     "mainCTAButtonText": "Book A Discovery Call",
-    "mainCTAButtonURL": "#contact",
+    "mainCTAButtonURL": "https://calendly.com/amycaughlinrealestate/discovery-call-with-amy",
     "primaryColor": "#e3c379",
     "accentColor": "#d9c6a2",
     "facebookPixelId": ""
