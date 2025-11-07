@@ -127,7 +127,7 @@ const config = {
       "href": "https://www.charlesrealestate.ca/property-search/privacy/"
     },
     "logo": {
-      "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Screenshot2025-10-30at12.18.10.png"
+      "src": "https://scontent-yyz1-1.xx.fbcdn.net/v/t39.30808-6/266762784_155365886814819_6774672081455448036_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Yg6K9KI-__8Q7kNvwHDxXQ7&_nc_oc=AdkWFQhIbNm93vOPU2nNqFac3A6LXJYqA84eEWUkKoQ8G_Tg7ZfaC8nFzEWEOydRJDw&_nc_zt=23&_nc_ht=scontent-yyz1-1.xx&_nc_gid=TzEUvOdZFHzADVOn7PG40A&oh=00_AfhzxnNfit16QDeKKfE3QUEcgRsC-jAK73ladNT3nqDSDQ&oe=69140453"
     },
     "secondaryLogo": {
       "src": "https://charlesrealestate.ca/charles/wp-content/uploads/2016/12/Charles_LG-transparent.png"
