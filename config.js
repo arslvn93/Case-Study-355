@@ -67,27 +67,58 @@ const config = {
     },
     {
       "type": "standard",
-      "title": "",
-      "paragraphs": [],
+      "title": "The Strategy",
+      "paragraphs": [
+        "Pre-qualified them thoroughly and lined up 15 carefully selected properties that matched their exact criteria before they even landed in Alberta",
+        "Scheduled an intensive 3-day viewing marathon, maximizing every hour they had in Red Deer",
+        "Streamlined the offer process with minimal conditions and an aggressive timeline that sellers would find irresistible",
+        "Leveraged my deep local market knowledge to identify the best value properties that hadn't been sitting on the market too long",
+        "Coordinated with their East Coast agent to ensure seamless communication and documentation across provinces"
+      ],
+      "testimonial": {
+        "quote": "\"Working with Amy was exactly what we needed during such a stressful time. She understood that we weren't just buying a house – we were making a life-changing move to be closer to our son. Her preparation, local expertise, and ability to move quickly gave us confidence that we'd find the right home, even with our impossible timeline. We couldn't have done this without her guidance and trusted referral network.\"<br><span>— Satisfied Client</span>"
+      },
       "listItems": []
     },
     {
       "type": "standard",
-      "title": "",
-      "paragraphs": [],
+      "title": "The Solution",
+      "paragraphs": [
+        "Everything changed when their trusted East Coast agent referred them to me with a glowing recommendation. They knew they needed someone who understood the unique challenges of long-distance relocating and could move at lightning speed when the right opportunity presented itself."
+      ],
+      "image": {
+        "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Screenshot2025-10-30at12.26.02.png"
+      },
       "listItems": []
     },
     {
       "type": "standard",
-      "title": "",
-      "paragraphs": [],
+      "title": "The Results",
+      "paragraphs": [
+        "Secured their dream home at 52 Kirby Street for $480,400 – saving them $4,500 off the asking price",
+        "<strong>FOUND, NEGOTIATED AND FIRMED UP THEIR PURCHASE IN JUST 3 DAYS</strong>",
+        "<strong>ACHIEVED 30-DAY CLOSING</strong> perfectly timed with their cross-country move",
+        "Successfully navigated the purchase with minimal conditions, making their offer highly competitive despite not being in a multiple offer situation"
+      ],
       "listItems": []
     },
     {
       "type": "standard",
-      "title": "",
-      "paragraphs": [],
+      "title": "Conclusion",
+      "paragraphs": [
+        "Know your top 3 non-negotiables before you start looking – this clarity becomes crucial when time is limited and decisions need to be made quickly",
+        "A well-connected agent with a strong referral network can be your secret weapon, especially for long-distance moves",
+        "Sometimes the best deals come from moving fast on properties that haven't been over-marketed – fresh listings often mean motivated sellers"
+      ],
       "listItems": []
+    },
+    {
+      "type": "ctaBanner",
+      "ctaBannerContent": {
+        "subhead": "Trusted By Hundreds Of Home Buyers & Sellers",
+        "headline": "Ready to make your Alberta move happen without the stress? Book your complimentary relocation strategy session where we'll create your personalized home-finding timeline and connect you with our trusted agent network across Canada.",
+        "smallText": "Book A Discovery Call Now ➡️"
+      }
     }
   ],
   "footer": {
