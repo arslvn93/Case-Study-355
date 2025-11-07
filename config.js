@@ -60,6 +60,9 @@ const config = {
         "They needed quick possession to coordinate their cross-country move seamlessly",
         "Finding a home that checked all their boxes (location, double garage, within budget) in such a short window felt nearly impossible"
       ],
+      "image": {
+        "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Image.jpeg"
+      },
       "listItems": []
     },
     {
