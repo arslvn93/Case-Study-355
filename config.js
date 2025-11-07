@@ -11,7 +11,7 @@ const config = {
           },
           {
             "type": "phone",
-            "value": "15874391618"
+            "value": "1-5874-391-618"
           }
         ]
       }
