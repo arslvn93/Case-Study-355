@@ -121,17 +121,17 @@ const config = {
   "footer": {
     "privacyPolicy": {
       "text": "Privacy Policy",
-      "href": "https://greaterpropertygroup.com/privacy-policy/"
+      "href": "https://www.charlesrealestate.ca/property-search/privacy/"
     },
     "logo": {
       "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Screenshot2025-10-30at12.18.10.png"
     },
     "secondaryLogo": {
-      "src": "https://greaterpropertygroup.com/wp-content/uploads/2022/06/255x71px_Logo-e1656046332885.png"
+      "src": "https://charlesrealestate.ca/charles/wp-content/uploads/2016/12/Charles_LG-transparent.png"
     },
     "brokerageLabel": "Brokerage:",
-    "brokerageName": "Greater Property Group",
-    "brokerageAddress": "5940 Macleod Trl SW #500, Calgary, AB T2H 2G4",
+    "brokerageName": "Charles Real Estate Inc.",
+    "brokerageAddress": "4915 Elbow Dr SW #205, Calgary, AB T2S 2L4",
     "disclaimerText": "All testimonials on this page are from real clients. Their experiences do not guarantee similar results.<br>Individual results may vary based on location, market conditions, motivation, as well as other unforeseen factors. Your results may vary."
   },
   "githubRepo": "https://github.com/arslvn93/Case-Study-355"
