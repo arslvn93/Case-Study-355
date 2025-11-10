@@ -60,9 +60,6 @@ const config = {
         "They needed quick possession to coordinate their cross-country move seamlessly",
         "Finding a home that checked all their boxes (location, double garage, within budget) in such a short window felt nearly impossible"
       ],
-      "image": {
-        "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Image.jpeg"
-      },
       "listItems": []
     },
     {
@@ -75,9 +72,6 @@ const config = {
         "Leveraged my deep local market knowledge to identify the best value properties that hadn't been sitting on the market too long",
         "Coordinated with their East Coast agent to ensure seamless communication and documentation across provinces"
       ],
-      "testimonial": {
-        "quote": "\"Working with Amy was exactly what we needed during such a stressful time. She understood that we weren't just buying a house – we were making a life-changing move to be closer to our son. Her preparation, local expertise, and ability to move quickly gave us confidence that we'd find the right home, even with our impossible timeline. We couldn't have done this without her guidance and trusted referral network.\"<br><span>— Satisfied Client</span>"
-      },
       "listItems": []
     },
     {
@@ -86,9 +80,6 @@ const config = {
       "paragraphs": [
         "Everything changed when their trusted East Coast agent referred them to me with a glowing recommendation. They knew they needed someone who understood the unique challenges of long-distance relocating and could move at lightning speed when the right opportunity presented itself."
       ],
-      "image": {
-        "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Screenshot2025-10-30at12.26.02.png"
-      },
       "listItems": []
     },
     {
@@ -100,6 +91,9 @@ const config = {
         "<strong>ACHIEVED 30-DAY CLOSING</strong> perfectly timed with their cross-country move",
         "Successfully navigated the purchase with minimal conditions, making their offer highly competitive despite not being in a multiple offer situation"
       ],
+      "image": {
+        "src": " https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-AmyReview52Kirby.png"
+      },
       "listItems": []
     },
     {
